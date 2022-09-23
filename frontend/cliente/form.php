@@ -3,9 +3,9 @@
 ?>
 
 <div class="cadastrar">
-    <form action="<?=isset($nome) ? './backend/cliente/update.php' : './backend/cliente/create.php'?>" method="post">
+    <form action="<?=isset($id) ? './backend/cliente/update.php' : './backend/cliente/create.php'?>" method="post">
         <?php  //title cadastrar ou atualizar
-            $title = isset($nome) ? 'Atualizar' : 'Cadastrar'; 
+            $title = isset($id) ? 'Atualizar' : 'Cadastrar'; 
             echo '<h1 class="title">'.$title.'</h1>';
         ?>
         <input type="hidden" name="id" value="<?= isset($id)? $id : ""; ?>"><br> 
